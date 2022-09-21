@@ -49,18 +49,30 @@ void computeProblem(double num1 , double num2 , int  choice){
 
 
 int  main(){
-    cout << "Enter the  1st number :";
-    double num1 , num2; int  choice;
-    cin >> num1;
+    // cout << "Enter the  1st number :";
+    
+    string problem ;
+    cout << ">>";
+    cin >> problem;
+    cout << problem;
 
-    cout << "Enter the  2nd number :";
-    cin >> num2;
+    
+    
 
-    cout << "Pick  your  arithmetic computation :";
-    cout <<"\n1. Add\t2.Subtract\n3.Multiply\t4.Divide\n\n:====>>";
-    cin >> choice;
 
-    computeProblem(num1 , num2 , choice);
+
+
+    // double num1 , num2; int  choice;
+    // cin >> num1;
+
+    // cout << "Enter the  2nd number :";
+    // cin >> num2;
+
+    // cout << "Pick  your  arithmetic computation :";
+    // cout <<"\n1. Add\t2.Subtract\n3.Multiply\t4.Divide\n\n:====>>";
+    // cin >> choice;
+
+    // computeProblem(num1 , num2 , choice);
 
     
 
