@@ -19,7 +19,7 @@ double divide(double num1 , double num2 ){
     return  num1 / num2;
 }
 
-void display(double  num){
+void  display(double  num){
     cout << num;
 }
 
