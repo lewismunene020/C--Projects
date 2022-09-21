@@ -56,7 +56,7 @@ int  main(){
     cin >> problem;
     cout << problem;
 
-    
+    /*"trying  to setup a command line  with multiple signs  and  brackets  usage  NEXT  COMMIT TO BE ABLE TO BREAK DOWN THE  PROBLEM  TO DIFFERENT  COMPONENTS STORE DTA  IN ARRAYS  AND COMPUE THE ELEMENTS IN THE CORRECT  ORDER"  */
     
 
 
