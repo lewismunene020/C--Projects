@@ -60,18 +60,21 @@ void computeProblem(double num1 , double num2 , int  choice){
 
 
 
-int  main(){
+
+int  main(int argc, char  *argv[]){
     // cout << "Enter the  1st number :";
-    char  * ptr;
+    char  * problem[10];
+    problem[0] = argv[1];
+    problem[1] = argv[2];
+    problem[2] = argv[3];
 
 
-    string problem = "12*12";
+    // int found = problem.find("*"); 
 
-    int found = problem.find("*");
-
-    ptr = strtok(problem ,"*");
+    // problem = strtok(problem ,"*");
+    cout << problem[0];
     
-    cout << "The Answer  is : "<< problem[found-1] * problem[found+1];
+    // cout << "The Answer  is : "<< problem[found-1] * problem[found+1];
     
     
 
