@@ -1,5 +1,8 @@
 #include<iostream>
 #include<stdio.h>
+#include<cstring>
+#include<string>
+
 
 using namespace std;
 
@@ -21,6 +24,15 @@ double divide(double num1 , double num2 ){
 
 void display(double  num){
     cout << num;
+}
+
+bool checkSign(char x){
+    if(x =='+' || x == '-' || x == '*' || x == '/'){
+        return true;
+    }
+    else{
+        return false;
+    } 
 }
 
 
@@ -50,11 +62,22 @@ void computeProblem(double num1 , double num2 , int  choice){
 
 int  main(){
     // cout << "Enter the  1st number :";
+    char  * ptr;
+
+
+    string problem = "12*12";
+
+    int found = problem.find("*");
+
+    ptr = strtok(problem ,"*");
     
-    string problem ;
-    cout << ">>";
-    cin >> problem;
-    cout << problem;
+    cout << "The Answer  is : "<< problem[found-1] * problem[found+1];
+    
+    
+
+    // cout << ">>";
+    // cin >> problem;
+    // cout << problem;
 
     /*"trying  to setup a command line  with multiple signs  and  brackets  usage  NEXT  COMMIT TO BE ABLE TO BREAK DOWN THE  PROBLEM  TO DIFFERENT  COMPONENTS STORE DTA  IN ARRAYS  AND COMPUE THE ELEMENTS IN THE CORRECT  ORDER"  */
     
